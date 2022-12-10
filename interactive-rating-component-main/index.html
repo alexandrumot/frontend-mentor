@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <script defer src="index.js"></script>
+
+</head>
+<body>
+  <main>
+    <section class="rating-state">
+
+      <div class="circle-border">
+        <img class="star-icon" src="./images/icon-star.svg" alt="Star icon">
+      </div>
+
+      <h1>How did we do?</h1>
+
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      
+      <form class="rating-form">
+        <div class="choice-section">
+          <input type="radio" id="choice1" name="rating-choices" value="1">
+          <label for="choice1" class="circle-border">1</label>
+          
+          <input type="radio" id="choice2" name="rating-choices" value="2">
+          <label for="choice2" class="circle-border">2</label>
+          
+          <input type="radio" id="choice3" name="rating-choices" value="3">
+          <label for="choice3" class="circle-border">3</label>
+          
+          <input type="radio" id="choice4" name="rating-choices" value="4">
+          <label for="choice4" class="circle-border">4</label>
+          
+          <input type="radio" id="choice5" name="rating-choices" value="5">
+          <label for="choice5" class="circle-border">5</label>
+        </div>
+
+        <button type="submit" class="submit">SUBMIT</button>
+      </form>
+      
+    </section>
+
+    <section class="thank-you-state hidden">
+  
+    <img src="./images/illustration-thank-you.svg" alt="Thank You Icon">
+
+    <p class="rating-selected">You selected 5 out of 5</p>
+
+    <h1>Thank you!</h1>
+
+    <p class="thank-you-msg">We appreciate you taking the time to give a rating. If you ever need more support, 
+    don't hesitate to get in touch!</p>
+
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/alexandrumot">Alex Moț</a>.
+    </div>
+  </footer>
+</body>
+</html>

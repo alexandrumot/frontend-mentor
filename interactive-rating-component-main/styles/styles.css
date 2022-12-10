@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+section {
+  background: radial-gradient(circle at top, hsl(213deg, 19%, 20%), hsl(213deg, 19%, 14%));
+  width: 400px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px;
+  border-radius: 25px;
+  max-width: 90%;
+}
+
+h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: bold;
+  margin: 0;
+}
+
+p {
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.rating-state p {
+  margin-top: -5px;
+}
+
+.star-icon {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(213deg, 19%, 23%);
+  height: auto;
+  width: 22px;
+}
+
+.circle-border {
+  width: 55px;
+  height: 55px;
+  background-color: hsl(213deg, 19%, 23%);
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.choice-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked + label {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+  color: hsl(216deg, 12%, 54%);
+  user-select: none;
+  transition: 0.2s ease;
+}
+
+.submit {
+  background-color: hsl(25deg, 97%, 53%);
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: hsl(0deg, 0%, 100%);
+  text-transform: uppercase;
+  border-radius: 35px;
+  text-align: center;
+  border: none;
+  width: 100%;
+  height: 50px;
+  transition: 0.3s;
+}
+
+@media (hover: hover) {
+  .submit:hover {
+    background-color: white;
+    color: hsl(25deg, 97%, 53%);
+    cursor: pointer;
+  }
+}
+@media (hover: hover) {
+  label:hover {
+    background-color: hsl(213deg, 19%, 50%);
+    color: hsl(0deg, 0%, 100%);
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .star-icon {
+    width: 20px;
+  }
+  .circle-border {
+    width: 50px;
+    height: 50px;
+  }
+  label {
+    font-size: 16px !important;
+  }
+  .attribution {
+    font-size: 15px !important;
+  }
+  .submit {
+    height: 45px !important;
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .star-icon {
+    width: 18px;
+  }
+  .circle-border {
+    width: 45px;
+    height: 45px;
+  }
+  label {
+    font-size: 14px !important;
+  }
+}
+.thank-you-state {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.thank-you-msg {
+  margin-top: -15px;
+}
+
+.rating-selected {
+  color: hsl(25deg, 70%, 50%);
+  background-color: hsl(213deg, 19%, 23%);
+  padding: 10px;
+  border-radius: 35px;
+  margin: 0;
+}
+
+footer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.attribution {
+  font-family: "Overpass", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+  position: fixed;
+  bottom: 1%;
+  text-align: center;
+  max-width: 95%;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(25deg, 97%, 53%);
+}
+
+/*# sourceMappingURL=index.css.map */

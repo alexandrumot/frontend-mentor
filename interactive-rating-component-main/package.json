@@ -1,0 +1,14 @@
+{
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "description": "Interactive rating component | Frontend Mentor Challenge",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch styles/index.scss:styles/index.css"
+  },
+  "author": "Alexandru Mot",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.56.2"
+  }
+}
