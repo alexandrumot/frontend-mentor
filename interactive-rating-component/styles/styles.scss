@@ -1,6 +1,5 @@
 $overpass: 'Overpass', sans-serif;
 $orange: hsl(25, 97%, 53%);
-$white: hsl(0, 0%, 100%);
 $very-dark-blue: hsl(216, 12%, 8%);
 $dark-blue: hsl(213, 19%, 24%);
 $light-grey: hsl(217, 12%, 63%);
@@ -40,7 +39,7 @@ section {
 }
 
 h1 {
-  color: $white;
+  color: white;
   font-weight: bold;
   margin: 0;
 }
@@ -100,7 +99,7 @@ input[type="radio"] {
 
 input[type="radio"]:checked + label {
   background-color: $orange;
-  color: $white;
+  color: white;
 }
 
 label {
@@ -115,7 +114,7 @@ label {
   background-color: $orange;
   font-size: 16px;
   letter-spacing: 0.1em;
-  color: $white;
+  color: white;
   text-transform: uppercase;
   border-radius: 35px;
   text-align: center;
@@ -138,7 +137,7 @@ label {
 @media (hover: hover) {
   label:hover { 
     background-color: hsl(213, 19%, 50%);
-    color: $white;
+    color: white;
     cursor: pointer;
   }
 }
@@ -207,7 +206,7 @@ footer {
 
 .attribution {
   font-family: $overpass;
-  color: $white;
+  color: white;
   position: fixed;
   bottom: 1%;
   text-align: center;
