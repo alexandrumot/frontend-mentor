@@ -3,10 +3,138 @@ $primary-cyan: hsl(178, 100%, 50%);
 $background: hsl(217, 54%, 11%);
 $card-background: hsl(216, 50%, 16%);
 $divider: hsl(215, 32%, 27%);
+$outfit: 'Outfit', sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body, main {
+  margin: 0;
+	height: 95vh;
+	background: $background;
+  color: $primary-cyan;
+  font-family: $outfit;
+}
+
+p {
+  color: $primary-soft-blue;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 90%;
+  width: 350px;
+  height: 600px;
+  padding: 25px;
+  background-color: $card-background;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nft-img {
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.nft-img:hover {
+  filter: saturate(150%);
+}
+
+.title {
+  font-weight: 400;
+  width: fit-content;
+  color: white;
+  margin-top: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.title:hover, .highlight:hover{
+  color: $primary-cyan !important;
+}
+.highlight:hover {
+  color: $primary-cyan;
+}
+
+.statement {
+  font-weight: 200;
+  color: $primary-soft-blue;
+  line-height: 1.6em;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-between;
+  color: $primary-soft-blue;
+  * {
+    display: flex;
+    gap: 6px;
+  }
+
+  .price-section {
+    font-weight: 400;
+    .price {
+     color: $primary-cyan;
+    }
+  }
+
+  .time-section {
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    .time-icon {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: hsl(215, 25%, 30%);
+  border-radius: 25px;
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  img {
+    width: 35px;
+    border-radius: 50%;
+    border: white solid 1px;
+  }
+  p {
+    font-weight: 200;
+    .highlight {
+      color: white;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+footer {
+  height: 5vh;
+  width: 100%;
+}
 
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 15px; 
+  text-align: center;
+  color: $primary-soft-blue;
   a { 
-    color: hsl(228, 45%, 44%);
+    color: white;
+    text-decoration: none;
   }
 }

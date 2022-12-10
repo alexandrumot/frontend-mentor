@@ -2,32 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | NFT preview card component</title>
 
 </head>
 <body>
   <main>
-    Equilibrium #3429
+    <section class="card">
+      <img src="./images/image-equilibrium.jpg" alt="NFT Picture" class="nft-img">
+      <h1 class="title">Equilibrium #3429</h1>
 
-    Our Equilibrium collection promotes balance and calm.
-  
-    0.041 ETH
-    3 days left
+      <p class="statement">Our Equilibrium collection promotes balance and calm.</p>
     
-    Creation of Jules Wyvern
+      <div class="stats-section">
+        <div class="price-section">
+          <img src="./images/icon-ethereum.svg" alt="ETH Icon" class="price-icon">
+          <p class="price">0.041 ETH</p>
+        </div>
+        
+        <div class="time-section">
+          <img src="./images/icon-clock.svg" alt="Clock" class="time-icon">
+          <p class="time">3 days left</p>
+        </div>
+        
+      </div>
+    
+      <div class="divider"></div>
+
+      <div class="author-section">
+        <img src="./images/image-avatar.png" alt="Avatar" class="author-img">
+        <p class="author-p">Creation of <span class="highlight">Jules Wyvern</span></p>
+      </div>
+      
+    </section>
   </main>
 
  
-  <footer>
-    <div class="attribution">
+  <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Alex Moț</a>.
-    </div>
+      Coded by <a href="https://github.com/alexandrumot">Alex Moț</a>.
   </footer>
   
 </body>

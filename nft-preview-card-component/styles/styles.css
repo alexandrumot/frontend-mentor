@@ -1,9 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body, main {
+  margin: 0;
+  height: 95vh;
+  background: hsl(217deg, 54%, 11%);
+  color: hsl(178deg, 100%, 50%);
+  font-family: "Outfit", sans-serif;
+}
+
+p {
+  color: hsl(215deg, 51%, 70%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 90%;
+  width: 350px;
+  height: 600px;
+  padding: 25px;
+  background-color: hsl(216deg, 50%, 16%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nft-img {
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.nft-img:hover {
+  filter: saturate(150%);
+}
+
+.title {
+  font-weight: 400;
+  width: fit-content;
+  color: white;
+  margin-top: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.title:hover, .highlight:hover {
+  color: hsl(178deg, 100%, 50%) !important;
+}
+
+.highlight:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.statement {
+  font-weight: 200;
+  color: hsl(215deg, 51%, 70%);
+  line-height: 1.6em;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(215deg, 51%, 70%);
+}
+.stats-section * {
+  display: flex;
+  gap: 6px;
+}
+.stats-section .price-section {
+  font-weight: 400;
+}
+.stats-section .price-section .price {
+  color: hsl(178deg, 100%, 50%);
+}
+.stats-section .time-section {
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+}
+.stats-section .time-section .time-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: hsl(215deg, 25%, 30%);
+  border-radius: 25px;
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.author-section img {
+  width: 35px;
+  border-radius: 50%;
+  border: white solid 1px;
+}
+.author-section p {
+  font-weight: 200;
+}
+.author-section p .highlight {
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+footer {
+  height: 5vh;
+  width: 100%;
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 15px;
   text-align: center;
+  color: hsl(215deg, 51%, 70%);
 }
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
