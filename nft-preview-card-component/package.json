@@ -1,13 +1,13 @@
 {
-  "name": "interactive-rating-component-main",
+  "name": "nft-preview-card-component-main",
   "version": "1.0.0",
-  "description": "Interactive rating component | Frontend Mentor Challenge",
+  "description": "NFT Preview Card Component | Frontend Mentor Challenge",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch styles/index.scss:styles/index.css"
   },
   "author": "Alexandru Mot",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "sass": "^1.56.2"
   }
