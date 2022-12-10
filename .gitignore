@@ -15,8 +15,9 @@
 **.DS_Store
 **.prettierignore
 
-**node_modules
-**.vscode
+
+**/node_modules
+**/.vscode
 **/*Zone.Identifier
-**package-lock.json
-**package.json
+**/package-lock.json
+**/package.json
