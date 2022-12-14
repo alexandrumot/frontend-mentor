@@ -30,7 +30,7 @@ section {
 }
 
 h1 {
-  color: hsl(0deg, 0%, 100%);
+  color: white;
   font-weight: bold;
   margin: 0;
 }
@@ -86,7 +86,7 @@ input[type=radio] {
 
 input[type=radio]:checked + label {
   background-color: hsl(25deg, 97%, 53%);
-  color: hsl(0deg, 0%, 100%);
+  color: white;
 }
 
 label {
@@ -101,7 +101,7 @@ label {
   background-color: hsl(25deg, 97%, 53%);
   font-size: 16px;
   letter-spacing: 0.1em;
-  color: hsl(0deg, 0%, 100%);
+  color: white;
   text-transform: uppercase;
   border-radius: 35px;
   text-align: center;
@@ -121,7 +121,7 @@ label {
 @media (hover: hover) {
   label:hover {
     background-color: hsl(213deg, 19%, 50%);
-    color: hsl(0deg, 0%, 100%);
+    color: white;
     cursor: pointer;
   }
 }
@@ -183,7 +183,8 @@ footer {
 
 .attribution {
   font-family: "Overpass", sans-serif;
-  color: hsl(0deg, 0%, 100%);
+  font-weight: 200;
+  color: white;
   position: fixed;
   bottom: 1%;
   text-align: center;
@@ -194,4 +195,4 @@ footer {
   color: hsl(25deg, 97%, 53%);
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=styles.css.map */

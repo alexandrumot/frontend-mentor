@@ -194,7 +194,7 @@ label {
   padding: 10px;
   border-radius: 35px;
   margin: 0;
-
+  
 }
 
 // ------------------- Footer ----------------------
@@ -206,6 +206,7 @@ footer {
 
 .attribution {
   font-family: $overpass;
+  font-weight: 200;
   color: white;
   position: fixed;
   bottom: 1%;
