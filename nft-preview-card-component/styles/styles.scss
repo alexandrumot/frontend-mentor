@@ -76,14 +76,12 @@ main {
   }
 }
 
-@media (hover: hover) {
-  .thumbnail:hover {
-    .view-icon {
-      opacity: 1;
-    }
-    .thumbnail-color {
-      opacity: 0.5;
-    }
+.thumbnail:hover {
+  .view-icon {
+    opacity: 1;
+  }
+  .thumbnail-color {
+    opacity: 0.5;
   }
 }
 
@@ -114,19 +112,15 @@ main {
   -webkit-tap-highlight-color: transparent;
 }
 
-@media (hover: hover) {
-  .title:hover, .highlight:hover{
-    color: $primary-cyan !important;
-  }
+.title:hover, .highlight:hover{
+  color: $primary-cyan !important;
 }
 
-@media (hover: hover) {
-  .highlight:hover {
-    color: $primary-cyan;
-  }
+.highlight:hover {
+  color: $primary-cyan;
 }
 
-.statement {
+.statement {  
   font-weight: 200;
   color: $primary-soft-blue;
   line-height: 1.6em;

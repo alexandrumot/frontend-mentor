@@ -64,14 +64,13 @@ main {
     font-size: 14px !important;
   }
 }
-@media (hover: hover) {
-  .thumbnail:hover .view-icon {
-    opacity: 1;
-  }
-  .thumbnail:hover .thumbnail-color {
-    opacity: 0.5;
-  }
+.thumbnail:hover .view-icon {
+  opacity: 1;
 }
+.thumbnail:hover .thumbnail-color {
+  opacity: 0.5;
+}
+
 .thumbnail-color {
   width: 300px;
   height: 300px;
@@ -99,16 +98,14 @@ main {
   -webkit-tap-highlight-color: transparent;
 }
 
-@media (hover: hover) {
-  .title:hover, .highlight:hover {
-    color: hsl(178deg, 100%, 50%) !important;
-  }
+.title:hover, .highlight:hover {
+  color: hsl(178deg, 100%, 50%) !important;
 }
-@media (hover: hover) {
-  .highlight:hover {
-    color: hsl(178deg, 100%, 50%);
-  }
+
+.highlight:hover {
+  color: hsl(178deg, 100%, 50%);
 }
+
 .statement {
   font-weight: 200;
   color: hsl(215deg, 51%, 70%);
