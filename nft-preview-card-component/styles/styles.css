@@ -44,6 +44,7 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 .thumbnail .image {
   width: 300px;
@@ -52,9 +53,6 @@ main {
 }
 
 @media only screen and (max-width: 400px) {
-  .attribution {
-    font-size: 14px !important;
-  }
   .image {
     max-width: 95%;
   }
@@ -62,14 +60,18 @@ main {
     max-width: 95%;
     max-height: 100%;
   }
+  .attribution {
+    font-size: 14px !important;
+  }
 }
-.thumbnail:hover .view-icon {
-  opacity: 1;
+@media (hover: hover) {
+  .thumbnail:hover .view-icon {
+    opacity: 1;
+  }
+  .thumbnail:hover .thumbnail-color {
+    opacity: 0.5;
+  }
 }
-.thumbnail:hover .thumbnail-color {
-  opacity: 0.5;
-}
-
 .thumbnail-color {
   width: 300px;
   height: 300px;
@@ -94,16 +96,19 @@ main {
   margin-top: 10px;
   transition: 0.3s;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.title:hover, .highlight:hover {
-  color: hsl(178deg, 100%, 50%) !important;
+@media (hover: hover) {
+  .title:hover, .highlight:hover {
+    color: hsl(178deg, 100%, 50%) !important;
+  }
 }
-
-.highlight:hover {
-  color: hsl(178deg, 100%, 50%);
+@media (hover: hover) {
+  .highlight:hover {
+    color: hsl(178deg, 100%, 50%);
+  }
 }
-
 .statement {
   font-weight: 200;
   color: hsl(215deg, 51%, 70%);
@@ -159,6 +164,7 @@ main {
   color: white;
   transition: 0.3s;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 footer {

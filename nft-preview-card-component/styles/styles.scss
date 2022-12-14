@@ -30,6 +30,8 @@ main {
 	height: 95vh;
 }
 
+// *************** MAIN *****************
+
 .card {
   max-width: 90%;
   width: 350px;
@@ -52,6 +54,7 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   .image {
     width: 300px;
     height: auto;
@@ -60,10 +63,6 @@ main {
 }
 
 @media only screen and (max-width: 400px) {
-  .attribution {
-    font-size: 14px !important;
-  }
-
   .image {
     max-width: 95%;
   }
@@ -71,14 +70,20 @@ main {
     max-width: 95%;
     max-height: 100%;
   }
+
+  .attribution {
+    font-size: 14px !important;
+  }
 }
 
-.thumbnail:hover {
-  .view-icon {
-    opacity: 1;
-  }
-  .thumbnail-color {
-    opacity: 0.5;
+@media (hover: hover) {
+  .thumbnail:hover {
+    .view-icon {
+      opacity: 1;
+    }
+    .thumbnail-color {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -93,7 +98,6 @@ main {
   transition: 0.5s;
 }
 
-
 .view-icon {
   position: absolute;
   opacity: 0;
@@ -107,12 +111,19 @@ main {
   margin-top: 10px;
   transition: 0.3s;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
-.title:hover, .highlight:hover{
-  color: $primary-cyan !important;
+
+@media (hover: hover) {
+  .title:hover, .highlight:hover{
+    color: $primary-cyan !important;
+  }
 }
-.highlight:hover {
-  color: $primary-cyan;
+
+@media (hover: hover) {
+  .highlight:hover {
+    color: $primary-cyan;
+  }
 }
 
 .statement {
@@ -170,11 +181,12 @@ main {
       color: white;
       transition: 0.3s;
       cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
     }
   }
 }
 
-
+// *************** FOOTER *****************
 
 footer {
   height: 5vh;
@@ -197,6 +209,8 @@ footer {
     text-decoration: none;
   }
 }
+
+// *************** UTILITIES *****************
 
 @keyframes fadein {
   from { opacity: 0; }
