@@ -36,6 +36,7 @@ section {
   padding: 25px;
   border-radius: 25px;
   max-width: 90%;
+  animation: fadein 1.5s;
 }
 
 h1 {
@@ -55,7 +56,7 @@ p {
   display: none;
 }
 
-// ---------------- Rating State -------------------
+// *************** RATING STATE *****************
 
 .rating-state {
   p {
@@ -175,7 +176,8 @@ label {
   }
 }
 
-// ---------------- Thank You State ----------------
+// *************** THANK YOU STATE *****************
+
 
 .thank-you-state {
   justify-content: center;
@@ -194,10 +196,12 @@ label {
   padding: 10px;
   border-radius: 35px;
   margin: 0;
-  
+
 }
 
-// ------------------- Footer ----------------------
+// *************** FOOTER *****************
+
+
 footer {
   height: 5vh;
   display: flex;
@@ -206,14 +210,32 @@ footer {
 
 .attribution {
   font-family: $overpass;
-  font-weight: 200;
   color: white;
   position: fixed;
   bottom: 1%;
   text-align: center;
   max-width: 95%;
+  animation: fadefrombottom 1s;
   a {
     text-decoration: none;
     color: $orange;
   }
+}
+
+// *************** UTILITIES *****************
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadefrombottom {
+  0% {
+    opacity: 0;
+    transform: translateY(150%);
+  }
+  40% {
+    opacity: 0.3;
+  }
+  100% { opacity: 1 }
 }

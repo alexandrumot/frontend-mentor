@@ -27,6 +27,7 @@ section {
   padding: 25px;
   border-radius: 25px;
   max-width: 90%;
+  animation: fadein 1.5s;
 }
 
 h1 {
@@ -183,16 +184,37 @@ footer {
 
 .attribution {
   font-family: "Overpass", sans-serif;
-  font-weight: 200;
   color: white;
   position: fixed;
   bottom: 1%;
   text-align: center;
   max-width: 95%;
+  animation: fadefrombottom 1s;
 }
 .attribution a {
   text-decoration: none;
   color: hsl(25deg, 97%, 53%);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadefrombottom {
+  0% {
+    opacity: 0;
+    transform: translateY(150%);
+  }
+  40% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
