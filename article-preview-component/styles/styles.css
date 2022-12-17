@@ -23,6 +23,9 @@ main {
   height: 320px;
   border-radius: 20px;
   display: flex;
+  filter: none;
+  animation: fadein 1.5s;
+  transition: 0.5s;
 }
 .card .banner {
   width: 325px;
@@ -78,6 +81,10 @@ main {
   border-radius: 50%;
 }
 
+.card:hover {
+  filter: drop-shadow(0 0 2rem hsl(216deg, 7%, 73%));
+}
+
 footer {
   height: 5vh;
   width: 100%;
@@ -100,6 +107,14 @@ footer {
   text-decoration: none;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fadefrombottom {
   0% {
     opacity: 0;

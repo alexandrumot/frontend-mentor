@@ -3,6 +3,7 @@ $paragraph: hsl(213, 16%, 60%);
 $author: hsl(224, 9%, 32%);
 $date: hsl(213, 16%, 80%);
 $background: hsl(210, 46%, 95%);
+$card-shadow: hsl(216, 7%, 73%);
 $share-background: hsl(213, 16%, 93%);
 
 body {
@@ -31,7 +32,9 @@ main {
   height: 320px;
   border-radius: 20px;
   display: flex;
-  
+  filter: none;
+  animation: fadein 1.5s;
+  transition: 0.5s;
   .banner {
     width: 325px;
     height: 100%;
@@ -92,6 +95,9 @@ main {
     border-radius: 50%;
   }
 }
+.card:hover {
+  filter: drop-shadow(0 0 2rem $card-shadow);
+}
 
 
 footer {
@@ -114,6 +120,11 @@ footer {
     color: $header;
     text-decoration: none;
   }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes fadefrombottom {
