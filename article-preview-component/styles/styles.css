@@ -118,7 +118,7 @@ footer {
 @keyframes fadefrombottom {
   0% {
     opacity: 0;
-    transform: translateY(120%);
+    transform: translateY(150%);
   }
   40% {
     opacity: 0.3;

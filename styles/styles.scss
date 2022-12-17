@@ -27,27 +27,27 @@ h1 {
 .cards-container {
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-around;
+  // justify-content: space-around;
 }
 
 
 
 .card {
-  width: 300px;
-  height: 500px;
+  min-width: 250px;
+  height: 300px;
   border: 2px solid white;  
   display: flex;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   justify-content: center;
   flex-direction: column;
   margin: 10px;
   transition: 0.2s;
   h2 {
     flex: 0 1 auto;
-    margin: 10px 0 10px 0;  
+    margin: 10px 10px 0 10px;  
   }
   .divider {
     flex: 0 1 auto;
@@ -62,8 +62,9 @@ h1 {
     align-items: center;
   }
   img {
-    width: 200px;
-    height: auto;
+    padding: 20px;
+    width: auto;
+    height: 250px;
     filter: grayscale(1);
     transition: 0.8s;
   }
