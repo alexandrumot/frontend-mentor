@@ -34,6 +34,12 @@ main {
   flex-direction: column;
   justify-content: space-between;
   animation: fadein 2s;
+  transition: 0.5s;
+  filter: none;
+}
+
+.card:hover {
+  transform: translateY(-10px);
   filter: drop-shadow(0 0 2rem hsl(216deg, 50%, 4%));
 }
 
