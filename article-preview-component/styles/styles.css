@@ -1,0 +1,116 @@
+body {
+  background-color: hsl(210deg, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  height: 100vh;
+}
+
+p {
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.card {
+  background-color: white;
+  width: 830px;
+  height: 320px;
+  border-radius: 20px;
+  display: flex;
+}
+.card .banner {
+  width: 325px;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+  object-fit: cover;
+  object-position: 0 0;
+}
+.card .card-info {
+  padding: 40px 50px 30px 50px;
+}
+.card .header {
+  margin-top: 0;
+  width: 100%;
+  color: hsl(215deg, 18%, 34%);
+  font-weight: 700;
+  font-size: 23px;
+  letter-spacing: 0.02em;
+}
+.card .statement {
+  color: #95a0b3;
+  font-weight: 500;
+  line-height: 1.4rem;
+  margin-bottom: 20px;
+}
+.card .avatar {
+  margin: 0;
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+  float: left;
+}
+.card .author-date {
+  display: flex;
+  float: left;
+  margin-left: 15px;
+  flex-direction: column;
+  width: fit-content;
+}
+.card .author-date .author {
+  margin: 0;
+  font-weight: 700;
+  color: hsl(224deg, 9%, 32%);
+}
+.card .author-date .date {
+  color: hsl(213deg, 16%, 80%);
+  margin: 0;
+}
+.card .share {
+  float: right;
+  padding: 10px;
+  background-color: hsl(213deg, 16%, 93%);
+  border-radius: 50%;
+}
+
+footer {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  position: fixed;
+  bottom: 1%;
+  max-width: 95%;
+  color: hsl(213deg, 16%, 60%);
+  animation: fadefrombottom 1s;
+}
+.attribution a {
+  color: hsl(215deg, 18%, 34%);
+  text-decoration: none;
+}
+
+@keyframes fadefrombottom {
+  0% {
+    opacity: 0;
+    transform: translateY(120%);
+  }
+  40% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
